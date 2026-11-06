@@ -1,1 +1,236 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taj Hotel Restaurant Website</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #062B1B;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Decorative Leaves */
+
+body::before {
+    content: "🌿";
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 100px;
+    transform: rotate(-30deg);
+    z-index: -1;
+}
+
+body::after {
+    content: "🌿";
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: 100px;
+    transform: scaleX(-1) rotate(-30deg);
+    z-index: -1;
+}
+
+/* Headings */
+
+h1, h2, h3, h4 {
+    color: #D4AF37;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 30px;
+}
+
+h2 {
+    margin: 15px;
+    padding: 10px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+    letter-spacing: 2px;
+}
+
+h3 {
+    margin: 10px;
+    padding: 6px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 4px;
+}
+
+h4 {
+    margin: 10px;
+    padding: 7px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+/* Buttons */
+
+button {
+    background-color: #D4AF37;
+    color: #062B1B;
+    margin: 16px;
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: all 0.4s ease;
+}
+
+button:hover {
+    background-color: #FFD700;
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/* Food List */
+
+ul {
+    margin: 20px;
+    padding: 20px;
+}
+
+li {
+    padding: 8px;
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #001F12;
+    color: white;
+    padding: 30px 20px;
+    border-top: 3px solid #D4AF37;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.4);
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-box {
+    min-width: 180px;
+}
+
+.footer-box h2,
+.footer-box h3 {
+    color: #D4AF37;
+}
+
+.footer-box p {
+    line-height: 1.6;
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #D4AF37;
+    padding-top: 15px;
+    margin-top: 25px;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+    <h1>Restaurant Name</h1>
+    <p>Taj Hotel.</p>
+    <button>Restaurant Name</button>
+
+    <h2>Food Items</h2>
+    <p>Idli, Dosa, Biryani, Rice and Sambar, Roti.</p>
+    <button>Food Items</button>
+
+    <h3>Prices</h3>
+    <p>Idli = ₹20, Dosa = ₹15, Biryani = ₹100, Rice and Sambar = ₹30, Roti = ₹10.</p>
+    <button>Prices</button>
+
+    <h4>Contact</h4>
+    <p>9999999999</p>
+    <button>Contact</button>
+
+    <ul>
+        <li>Idli = ₹20</li>
+        <li>Dosa = ₹15</li>
+        <li>Biryani = ₹100</li>
+        <li>Rice and Sambar = ₹30</li>
+        <li>Roti = ₹10</li>
+    </ul>
+
+    <!-- Professional Footer -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h2>Taj Hotel</h2>
+                <p>Taste the Royal Flavour</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <p>Phone: 9999999999</p>
+                <p>Location: Udupi, Karnataka</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Opening Hours</h3>
+                <p>Monday - Sunday</p>
+                <p>10 AM - 11 PM</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Follow Us</h3>
+                <p>Facebook | Instagram | YouTube</p>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 Taj Hotel. All Rights Reserved.
+        </p>
+
+    </footer>
+
+</body>
+</html>
+
