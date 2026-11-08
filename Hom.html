@@ -1,0 +1,268 @@
+
+{ box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #062B1B; color: white; font-family: Arial, sans-serif; line-height: 1.6; }
+nav { background: #174D35; padding: 20px; text-align: center; position: sticky; top: 0; }
+nav a { color: white; text-decoration: none; margin: 12px; font-weight: bold; }
+nav a:hover { color: gold; }
+.hero { text-align: center; padding: 100px 20px; background: linear-gradient(135deg, #062B1B, #174D35); }
+.hero h1 { color: #D4AF37; font-size: 50px; }
+.hero p { font-size: 20px; margin: 15px; }
+.btn { display: inline-block; background: #D4AF37; color: #062B1B; padding: 12px 25px; text-decoration: none; border-radius: 8px; margin-top: 20px; font-weight: bold; }
+.btn:hover { background: white; transform: scale(1.05); }
+section { padding: 50px 20px; text-align: center; }
+h2 { color: #D4AF37; margin-bottom: 20px; font-size: 30px; }
+.container { max-width: 1000px; margin: auto; }
+.food-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+.food-card { background: #174D35; padding: 25px; border: 1px solid #D4AF37; border-radius: 12px; transition: 0.3s; }
+.food-card:hover { transform: translateY(-8px); box-shadow: 0 5px 20px rgba(212,175,55,0.3); }
+.food-card h3 { color: #D4AF37; margin-bottom: 10px; }
+.price { color: gold; font-weight: bold; font-size: 20px; }
+footer { background: #001F12; text-align: center; padding: 30px; border-top: 2px solid #D4AF37; }
+footer a { color: gold; text-decoration: none; margin: 8px; }
+@media(max-width: 600px) { nav { padding: 15px 5px; }
+nav a {
+    display: inline-block;
+    margin: 6px;
+    font-size: 14px;
+}
+
+.hero h1 {
+    font-size: 35px;
+}
+}
+3. index.html (Home page)
+Writing
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taj Hotel - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="hero">
+    <h1>Welcome to Taj Hotel</h1>
+    <p>Experience the Taste of Royal Food</p>
+    <a href="menu.html" class="btn">Explore Our Menu</a>
+</div>
+
+<section class="container">
+    <h2>Welcome to Our Restaurant</h2>
+    <p>Enjoy delicious and fresh food with your family and friends.</p>
+    <p>We serve quality food at affordable prices.</p>
+    <a href="about.html" class="btn">Know More</a>
+</section>
+
+<section>
+    <h2>Our Special Foods</h2>
+
+    <div class="container food-list">
+
+        <div class="food-card">
+            <h3>Idli</h3>
+            <p>Soft and delicious idli.</p>
+            <p class="price">₹20</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Dosa</h3>
+            <p>Crispy and tasty dosa.</p>
+            <p class="price">₹15</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Biryani</h3>
+            <p>Special aromatic biryani.</p>
+            <p class="price">₹100</p>
+        </div>
+
+    </div>
+
+    <a href="menu.html" class="btn">View Full Menu</a>
+</section>
+
+<footer>
+    <p>© 2026 Taj Hotel. All Rights Reserved.</p>
+    <a href="contact.html">Contact Us</a>
+</footer>
+
+</body>
+</html>
+4. menu.html (Menu page)
+Writing
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taj Hotel - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+    <h2>Our Food Menu</h2>
+
+    <div class="food-list">
+
+        <div class="food-card">
+            <h3>Idli</h3>
+            <p>Soft steamed idli.</p>
+            <p class="price">₹20</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Dosa</h3>
+            <p>Fresh crispy dosa.</p>
+            <p class="price">₹15</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Biryani</h3>
+            <p>Delicious special biryani.</p>
+            <p class="price">₹100</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Rice and Sambar</h3>
+            <p>Traditional South Indian meal.</p>
+            <p class="price">₹30</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Roti</h3>
+            <p>Freshly prepared roti.</p>
+            <p class="price">₹10</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Taj Hotel. All Rights Reserved.</p>
+    <a href="contact.html">Contact Us</a>
+</footer>
+
+</body>
+</html>
+5. about.html (About Us page)
+Writing
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taj Hotel - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+    <h2>About Taj Hotel</h2>
+
+    <p>
+        Welcome to Taj Hotel, where taste meets quality.
+        We provide delicious food prepared with fresh ingredients.
+    </p>
+
+    <br>
+
+    <h2>Our Mission</h2>
+
+    <p>
+        Our mission is to serve tasty, hygienic and affordable
+        food to our customers.
+    </p>
+
+    <br>
+
+    <h2>Why Choose Us?</h2>
+
+    <div class="food-list">
+
+        <div class="food-card">
+            <h3>Fresh Food</h3>
+            <p>Freshly prepared meals.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Affordable Prices</h3>
+            <p>Quality food at reasonable prices.</p>
+        </div>
+
+        <div class="food-card">
+            <h3>Good Service</h3>
+            <p>Friendly customer service.</p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Taj Hotel. All Rights Reserved.</p>
+    <a href="contact.html">Contact Us</a>
+</footer>
+
+</body>
+</html>
+6. contact.html (Contact page)
+Writing
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Taj Hotel - Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section class="container">
+    <h2>Contact Us</h2>
+
+    <div class="food-card">
+        <h3>Taj Hotel</h3>
+
+        <p>Phone: 9999999999</p>
+
+        <p>Location: Udupi, Karnataka</p>
+
+        <p>Opening Hours: 10 AM - 11 PM</p>
+
+        <a href="tel:9999999999" class="btn">Call Us</a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Taj Hotel. All Rights Reserved.</p>
+    <a href="index.html">Back to Home</a>
+</footer>
+
+</body>
+</html>
