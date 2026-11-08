@@ -1,0 +1,132 @@
+nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+</nav>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - TAJ HOTEL</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>TAJ HOTEL</h1>
+        <p>Delicious Food, Happy Moments!</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About Us</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <section class="about">
+        <h2>About Our Restaurant</h2>
+
+        <p>
+            Welcome to TAJ HOTEL! We are passionate about
+            serving delicious and fresh food to our customers.
+            Our restaurant provides a comfortable atmosphere
+            and a wonderful dining experience.
+        </p>
+    </section>
+
+    <section class="story">
+        <h2>Our Story</h2>
+
+        <p>
+            TAJ HOTEL was created with a simple mission:
+            to serve tasty food with quality ingredients.
+            We bring together traditional Indian flavours
+            and excellent hospitality.
+        </p>
+    </section>
+
+    <section class="special">
+        <h2>Why Choose Us?</h2>
+
+        <div>
+            <h3>Fresh Food</h3>
+            <p>We focus on fresh and quality ingredients.</p>
+        </div>
+
+        <div>
+            <h3>Best Taste</h3>
+            <p>Enjoy delicious meals prepared with care.</p>
+        </div>
+
+        <div>
+            <h3>Friendly Service</h3>
+            <p>We make every customer feel welcome.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 TAJ HOTEL | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
+2. about.css
+Writing
+{ box-sizing: border-box; }
+body { margin: 0; padding: 0; background-color: #062B1B; color: white; font-family: Arial, sans-serif; line-height: 1.7; }
+header { background-color: #041D14; text-align: center; padding: 30px; }
+header h1 { color: gold; font-size: 38px; }
+nav { background-color: #174D35; text-align: center; padding: 15px; }
+nav a { color: white; text-decoration: none; margin: 12px; font-weight: bold; }
+nav a:hover { color: gold; }
+.about, .story { max-width: 900px; margin: 35px auto; padding: 25px; text-align: center; background-color: #10432E; border-radius: 12px; }
+h2 { color: gold; font-size: 28px; }
+.special { text-align: center; padding: 30px; }
+.special div { display: inline-block; background-color: #174D35; padding: 20px; margin: 12px; width: 250px; border-radius: 12px; vertical-align: top; }
+.special h3 { color: orange; }
+footer { background-color: #041D14; text-align: center; padding: 20px; margin-top: 30px; }
+@media (max-width: 600px) { nav a { display: inline-block; margin: 6px; }
+.special div {
+    width: 90%;
+}
+
+.about, .story {
+    margin: 20px;
+}
+}
+Here is a simple example of connecting HTML and CSS for one webpage.
+1. HTML file – index.html
+Writing
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+
+    <!-- Connect CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Welcome to TAJ HOTEL</h1>
+
+    <p>Delicious Food, Happy Moments!</p>
+
+    <button>Explore Menu</button>
+
+</body>
+</html>nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About Us</a>
+
+body { background-color: #062B1B; color: white; text-align: center; font-family: Arial; padding: 50px; }
+h1 { color: gold; font-size: 40px; }
+p { font-size: 22px; }
+button { background-color: gold; color: black; padding: 12px 25px; border: none; border-radius: 8px; cursor: pointer; }
+button:hover { background-color: orange; }
+
+<link rel="stylesheet" href="style.css">
